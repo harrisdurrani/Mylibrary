@@ -9,6 +9,7 @@ services:
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_USER=postgres
             - POSTGRES_HOST=localhost
+            - ALLOWED_HOSTS=127.0.0.1, localhost
 
         ports:
             - "5432"
@@ -31,6 +32,7 @@ services:
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_USER=postgres
             - DEBUG_HOST
+            - ALLOWED_HOSTS=127.0.0.1, localhost
         restart: "no"
         volumes:
             - .:/code
