@@ -1,0 +1,18 @@
+{% extends "website/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h2>Search our vast catalog</h2>
+<form>
+	<label for="fname">Author first name:</label><br>
+	<input type="text" id="fname" name="fname" value=""><br>
+	<label for="lname">Author last name:</label><br>
+	<input type="text" id="lname" name="lname" value=""><br>
+	<label for="title">Title:</label><br>
+	<input type="text" id="title" name="title" value=""><br>
+	<label for="isbn">ISBN:</label><br>
+	<input type="text" id="isbn" name="isbn" value=""><br><br>
+	<input type="submit" value="Submit">
+  </form> 
+{% endblock content %}

@@ -8,3 +8,6 @@ def home(request):
 
 def about(request):
     return render(request, 'website/about.html')
+
+def catalog(request):
+    return render(request, 'website/catalog.html')
