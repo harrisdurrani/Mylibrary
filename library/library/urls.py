@@ -25,8 +25,10 @@ router.register(r'book', views.BookViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('api', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('website/', include('website.urls')),
+    path('', include('website.urls')),
     path('register/', user_views.register, name='register'),
+    path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
+    path('logout/', auth_views.LoginView.as_view(template_name='users/logout.html'), name='logout'),
 ]
