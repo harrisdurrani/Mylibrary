@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="grid-container">
-	<div class="button"><a href="#">Library Card Registration</a></div>
+	<div class="button"><a href="{% url 'librarycard' %}">Library Card Registration</a></div>
 	<div class="button"><a href="#">Directions</a></div>
 	<div class="button"><a href="#">College Prep Resources</a></div>  
 	<div class="button"><a href="#">Films</a></div>
@@ -13,4 +13,5 @@
 	<div class="button"><a href="#">Cooking</a></div>
 	<div class="button"><a href="{% url 'users-contact' %}">Contact Us</a></div>
   </div>
+
 {% endblock content %}

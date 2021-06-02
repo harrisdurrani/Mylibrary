@@ -11,3 +11,6 @@ def about(request):
 
 def catalog(request):
     return render(request, 'website/catalog.html')
+
+def library_card_view(request):
+    return render(request, "website/librarycard.html")

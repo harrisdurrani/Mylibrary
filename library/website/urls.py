@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.home, name='website-home'),
     path('about/', views.about, name='website-about'),
     path('catalog/', views.catalog, name='website-catalog'),
-    path('contact/', view_contact.contactView, name='users-contact')
+    path('contact/', view_contact.contactView, name='users-contact'),
+    path('ecard/', views.library_card_view, name='librarycard'),
 ]
